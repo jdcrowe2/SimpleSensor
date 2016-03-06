@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nroy8.simplesensor.MainActivity">
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />-->
+    <TextView
+        android:id="@+id/xcoordView"
+        android:text="Sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Accel:"
+        android:id="@+id/tvAccel"
+        android:layout_below="@+id/xcoordView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="accelX"
+        android:id="@+id/tvAccelX"
+        android:layout_below="@+id/tvAccel"
+        android:layout_toRightOf="@+id/tvAccel"
+        android:layout_toEndOf="@+id/tvAccel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="accelY"
+        android:id="@+id/tvAccelY"
+        android:layout_below="@+id/tvAccelX"
+        android:layout_alignLeft="@+id/tvAccelX"
+        android:layout_alignStart="@+id/tvAccelX" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="accelZ"
+        android:id="@+id/tvAccelZ"
+        android:layout_below="@+id/tvAccelY"
+        android:layout_alignLeft="@+id/tvAccelY"
+        android:layout_alignStart="@+id/tvAccelY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gyro:"
+        android:id="@+id/tvGyro"
+        android:layout_below="@+id/tvAccelZ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="gyroX"
+        android:id="@+id/tvGyroX"
+        android:layout_below="@+id/tvGyro"
+        android:layout_alignLeft="@+id/tvAccelZ"
+        android:layout_alignStart="@+id/tvAccelZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="gyroY"
+        android:id="@+id/tvGyroY"
+        android:layout_below="@+id/tvGyroX"
+        android:layout_alignLeft="@+id/tvGyroX"
+        android:layout_alignStart="@+id/tvGyroX" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="gyroZ"
+        android:id="@+id/tvGyroZ"
+        android:layout_below="@+id/tvGyroY"
+        android:layout_alignLeft="@+id/tvGyroY"
+        android:layout_alignStart="@+id/tvGyroY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mag:"
+        android:id="@+id/tvMag"
+        android:layout_below="@+id/tvGyroZ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="magX"
+        android:id="@+id/tvMagX"
+        android:layout_below="@+id/tvMag"
+        android:layout_alignLeft="@+id/tvGyroZ"
+        android:layout_alignStart="@+id/tvGyroZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="magY"
+        android:id="@+id/tvMagY"
+        android:layout_below="@+id/tvMagX"
+        android:layout_alignLeft="@+id/tvMagX"
+        android:layout_alignStart="@+id/tvMagX" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="magZ"
+        android:id="@+id/tvMagZ"
+        android:layout_below="@+id/tvMagY"
+        android:layout_alignLeft="@+id/tvMagY"
+        android:layout_alignStart="@+id/tvMagY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Light:"
+        android:id="@+id/tvLight"
+        android:layout_below="@+id/tvMagZ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="light"
+        android:id="@+id/tvLightL"
+        android:layout_below="@+id/tvLight"
+        android:layout_alignLeft="@+id/tvMagZ"
+        android:layout_alignStart="@+id/tvMagZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="time"
+        android:id="@+id/tvTime"
+        android:layout_alignBottom="@+id/xcoordView"
+        android:layout_toRightOf="@+id/xcoordView"
+        android:layout_toEndOf="@+id/xcoordView" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvLightL"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/rbg">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WALKING"
+            android:id="@+id/rbWalking"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUNNING"
+            android:id="@+id/rbRunning"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IDLE"
+            android:id="@+id/rbIdle"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STAIRS"
+            android:id="@+id/rbStairs"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUMPING"
+            android:id="@+id/rbJumping"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/bStart"
+        android:layout_alignTop="@+id/tvAccelX"
+        android:layout_alignLeft="@+id/tvTime"
+        android:layout_alignStart="@+id/tvTime"
+        android:onClick="onButtonClick"
+        android:enabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/bStop"
+        android:layout_below="@+id/tvAccelZ"
+        android:layout_alignLeft="@+id/bStart"
+        android:layout_alignStart="@+id/bStart"
+        android:onClick="onButtonClick"
+        android:nestedScrollingEnabled="false"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/tbCm"
+        android:layout_alignBottom="@+id/tvMag"
+        android:layout_toRightOf="@+id/xcoordView"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="cm"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/tvMagX"
+        android:layout_alignRight="@+id/tbCm"
+        android:layout_alignEnd="@+id/tbCm" />
+
+</RelativeLayout>
